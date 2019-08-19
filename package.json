@@ -10,7 +10,8 @@
     "test:module3": "cross-env NODE_ENV=test mocha --exit './test/module3/*.spec.js' || true",
     "test:module4": "cross-env NODE_ENV=test mocha --exit './test/module4/*.spec.js' || true",
     "test:module5": "cross-env NODE_ENV=test mocha --exit './test/module5/*.spec.js' || true",
-    "test": "cross-env NODE_ENV=test mocha --exit './test/**/*.spec.js' || true"
+    "test": "cross-env NODE_ENV=test mocha --exit './test/**/*.spec.js' || true",
+    "lint": "eslint .\\src\\"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
     "chai": "4.1.2",
     "cheerio": "1.0.0-rc.2",
     "cross-env": "^5.2.0",
+    "eslint": "^6.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "mocha": "5.1.1",
     "nodemon": "1.17.4",
     "proxyquire": "2.0.1",
